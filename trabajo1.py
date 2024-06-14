@@ -24,8 +24,14 @@ while True:
         trabajadores.append(trabajador)
         print("trabajador agregado con exito")
     elif opc == 2:
-        pass
-
+        if len(trabajadores) ==0:
+            print("no existen trabajdores,elija la opcion 1")
+        else:
+            print("\tlista de trabajadores")
+            print("trabajador:\tsueldo bruto:\tdescuento salud:\tdescuento AFP:\t sueldo liquido:")
+            for t in trabajadores:#t:seria cada trabajadore de la lista
+                print(f"{t[0]}\t{t[1]}\t{t[2]}\t\t\t{t[3]}\t\t{t[4]}\t\t{t[5]}")
+ 
     elif opc ==3:
         pass
 
